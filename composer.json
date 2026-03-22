@@ -21,8 +21,8 @@
         "php": "^8.0"
     },
     "require-dev": {
-        "phpunit/phpunit": "9.5.*",
-        "phpstan/phpstan": "^1.10"
+        "phpunit/phpunit": "^11.5",
+        "phpstan/phpstan": "^2.1"
     },
     "autoload": {
         "psr-4" : {
@@ -30,8 +30,8 @@
         }
     },
     "scripts": {
-        "test": "php8.4 ./vendor/phpunit/phpunit/phpunit",
-        "test-f": "php8.4 ./vendor/phpunit/phpunit/phpunit --filter",
+        "test": "php8.5 ./vendor/phpunit/phpunit/phpunit",
+        "test-f": "php8.5 ./vendor/phpunit/phpunit/phpunit --filter",
         "phpstan": "php8.3 ./vendor/bin/phpstan --configuration='tools/phpstan/phpstan.neon'",
         "fix-all": "php8.2 ./tools/php-cs-fixer/vendor/bin/php-cs-fixer fix --config=tools/php-cs-fixer/.php-cs-fixer.dist.php",
         "fix-all-dry": "php8.2 ./tools/php-cs-fixer/vendor/bin/php-cs-fixer fix --config=tools/php-cs-fixer/.php-cs-fixer.dist.php -vv --dry-run --diff"
