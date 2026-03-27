@@ -27,6 +27,18 @@ class Request implements RequestInterface
 
     public function __construct()
     {
+        // Handle symfony live component
+        if (str_starts_with($_SERVER['REQUEST_URI'], '/_component')) {
+            $url = parse_url($_SERVER['HTTP_REFERER']);
+            if (isset($url['query'])) {
+                foreach (explode("&", $url['query']) as $item) {
+                    $a = explode('=', $item);
+                    $_GET[$a[0]] = $a[1];
+                }
+            }
+            $_SERVER['REQUEST_URI'] = $url['path'];
+        }
+
         $this->paramGet = new ParameterBag($_GET);
         $this->paramServer = new ParameterBag($_SERVER);
     }
