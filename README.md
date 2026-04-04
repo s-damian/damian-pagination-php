@@ -11,7 +11,15 @@
 [![Latest Stable Version](https://poser.pugx.org/s-damian/damian-pagination-php/v/stable)](https://packagist.org/packages/s-damian/damian-pagination-php)
 [![License](https://poser.pugx.org/s-damian/damian-pagination-php/license)](https://packagist.org/packages/s-damian/damian-pagination-php)
 
+🛠️ 100% handcrafted code (no LLMs were used)
+
 ## Damian Pagination PHP - Open Source Pagination
+
+### Author
+
+This package is developed by [Stephen Damian](https://github.com/s-damian)
+
+🛠️ 100% handcrafted code (no LLMs were used)
 
 ### Introduction - Damian Pagination PHP
 
@@ -43,10 +51,6 @@ $offset = $pagination->getOffset();
 echo $pagination->render();
 echo $pagination->perPageForm();
 ```
-
-### Author
-
-This package is developed by [Stephen Damian](https://github.com/s-damian).
 
 ### Requirements
 
