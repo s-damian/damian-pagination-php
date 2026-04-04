@@ -19,8 +19,6 @@
 
 This package is developed by [Stephen Damian](https://github.com/s-damian)
 
-🛠️ 100% handcrafted code (no LLMs were used)
-
 ### Introduction - Damian Pagination PHP
 
 Damian Pagination PHP is an open-source PHP library designed to provide simple yet comprehensive pagination functionality.
